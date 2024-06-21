@@ -1,0 +1,21 @@
+@mixin breakPointMaxWidth($point) {
+    @media (max-width: $point) {
+        @content;
+    }
+}
+
+@mixin breakPointMedium($point) {
+  @if $point == md {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+}
+
+@mixin breakPointSmall($point) {
+    @if $point == sd {
+      @media (max-width: 600px) {
+        @content;
+      }
+    }
+}

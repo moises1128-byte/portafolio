@@ -1,0 +1,64 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-primary-light: #2552AC;
+  --text-primary-dark: #30fca4;
+
+  --text-secondary-light: #5AC8D8;
+  --text-secondary-dark: white;
+
+  --text-tertiary-light: #597FCA;
+  --text-tertiary-dark: gray;
+
+  --bg-primary-light: gray;
+  --bg-primary-dark: black;
+
+  --bg-secondary-light: rgb(212, 212, 212);
+  --bg-secondary-dark: rgb(34, 34, 34);
+
+  --bg-light: #F1F4F6;
+  --bg-dark: #202123;
+
+  --bg-shadow-light: -2px -2px 5px gray, 3px 3px 5px rgba(0, 0, 0, 0.1)
+  --bg-shadow-dark: -2px -2px 5px black, 3px 3px 5px rgba(0, 0, 0, 0.1)
+  
+
+  --bg-shadow-inset-light: inset -2px -2px 5px gray, inset 3px 3px 5px rgba(0, 0, 0, 0.1)
+  --bg-shadow-inset-dark: inset -2px -2px 5px black, inset 3px 3px 5px rgba(0, 0, 0, 0.1)
+ 
+}
+
+.light-theme {
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --text-tertiary: var(--text-tertiary-light);
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+  --bg: var(--bg-light);
+  --bg-shadow: var(--bg-shadow-light);
+  --bg-shadow-inset: var(--bg-shadow-inset-light);
+}
+
+.dark-theme {
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --text-tertiary: var(--text-tertiary-dark);
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  --bg: var(--bg-dark);
+  --bg-shadow: var(--bg-shadow-dark);
+  --bg-shadow-inset: var(--bg-shadow-inset-dark);
+}
+
+.App {
+  background-color: var(--bg);
+}
