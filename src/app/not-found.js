@@ -2,10 +2,8 @@
 
 import { useContext, useEffect, useRef } from "react";
 import Link from "next/link";
-import Lottie from "lottie-react";
 import { ThemeContext } from "../assets/theme/page";
 import styles from "./styles.module.scss";
-
 import * as data from "../assets/animation/404.json";
 
 export default function NotFound() {
