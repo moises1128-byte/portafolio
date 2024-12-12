@@ -15,7 +15,6 @@ export default function NavBar() {
     setMenuOpen(!menuOpen);
   };
 
-  console.log(window.location.href, "test");
   return (
     <header className={`App ${theme}`}>
       <nav
