@@ -12,33 +12,25 @@ import Slide_Left from "../../../assets/animation/Slide-Left/page";
 export default function RightContainer({ toast }) {
   return (
     <div id="rightSection" className={styles.rightSection}>
-      <Slide_Left>
-        <About />
-      </Slide_Left>
+      <About />
 
-      <Slide_Left delay={0.1}>
-        <Skills />
-      </Slide_Left>
+      <Skills />
 
-      <Slide_Left delay={0.3}>
+      {/* <Slide_Left delay={0.3}>
         <Service />
-      </Slide_Left>
+      </Slide_Left> */}
 
-      <Slide_Left delay={0.3}>
-        <Portafolio />
-      </Slide_Left>
+      <Portafolio />
 
-      <Slide_Left delay={0.3}>
+      {/* <Slide_Left delay={0.3}>
         <Blog />
-      </Slide_Left>
+      </Slide_Left> */}
 
-      <Slide_Left delay={0.3}>
+      {/* <Slide_Left delay={0.3}>
         <Testimonial />
-      </Slide_Left>
+      </Slide_Left> */}
 
-      <Slide_Left delay={0.3}>
-        <Contact toast={toast} />
-      </Slide_Left>
+      <Contact toast={toast} />
     </div>
   );
 }

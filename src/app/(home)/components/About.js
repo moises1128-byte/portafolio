@@ -3,7 +3,11 @@ import styles from "../home.module.scss";
 
 export default function AboutContainer() {
   return (
-    <div style={{ marginTop: 40 }} className={styles.container}>
+    <div
+      id="about"
+      style={{ marginTop: 70, scrollMarginTop: 110 }}
+      className={styles.container}
+    >
       <span className={styles.label}>About Me</span>
 
       <p className={styles.sub_title}>

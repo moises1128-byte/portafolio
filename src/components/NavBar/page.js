@@ -2,10 +2,8 @@
 import React, { useContext, useState } from "react";
 import styles from "./navBar.module.scss";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Logo from "../../assets/images/svg/logo.svg";
-import { motion } from "framer-motion";
 import { ThemeContext } from "../../assets/theme/page";
 
 export default function NavBar() {
@@ -16,6 +14,8 @@ export default function NavBar() {
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
+
+  console.log(window.location.href, "test");
   return (
     <header className={`App ${theme}`}>
       <nav
@@ -27,6 +27,7 @@ export default function NavBar() {
             checked={menuOpen}
             onChange={handleMenuToggle}
             id="menu-toggle"
+            className={styles.check}
           />
           <label htmlFor="menu-toggle" className={styles.hamburger_lines}>
             <span className={`${styles.line} ${styles.line1}`}></span>
@@ -42,17 +43,19 @@ export default function NavBar() {
                 src={Logo}
               />
               <div className={styles.item_container}>
-                <div
+                {/* <div
                   onClick={() => {
                     router.push("/"), setMenuOpen(!menuOpen);
                   }}
                   className={`${styles.navButtons} ${styles.nav_link}`}
                 >
                   <span>HOME</span>
-                </div>
+                </div> */}
                 <div
                   onClick={() => {
-                    router.push("/about"), setMenuOpen(!menuOpen);
+                    document.querySelector("#about").scrollIntoView({
+                      behavior: "smooth",
+                    });
                   }}
                   className={`${styles.navButtons} ${styles.nav_link}`}
                 >
@@ -60,55 +63,30 @@ export default function NavBar() {
                 </div>
                 <div
                   onClick={() => {
-                    router.push("/portafolio"), setMenuOpen(!menuOpen);
+                    document.querySelector("#projects").scrollIntoView({
+                      behavior: "smooth",
+                      top: 100
+                    });
                   }}
                   className={`${styles.navButtons} ${styles.nav_link}`}
                 >
-                  <span>PORTFOLIO</span>
+                  <span>PROJECTS</span>
                 </div>
 
                 <div
                   onClick={() => {
-                    router.push("/loader"), setMenuOpen(!menuOpen);
-                  }}
-                  className={`${styles.navButtons} ${styles.nav_link}`}
-                >
-                  <span>LOADER</span>
-                </div>
-
-                <div
-                  onClick={() => {
-                    router.push("/timeline"), setMenuOpen(!menuOpen);
-                  }}
-                  className={`${styles.navButtons} ${styles.nav_link}`}
-                >
-                  <span>TIMELINE</span>
-                </div>
-
-                <div
-                  onClick={() => {
-                    router.push("/contact"), setMenuOpen(!menuOpen);
+                    document.querySelector("#contact").scrollIntoView({
+                      behavior: "smooth",
+                    });
                   }}
                   className={`${styles.navButtons} ${styles.nav_link}`}
                 >
                   <span>CONTACT</span>
                 </div>
-
-                <motion.div
-                  onClick={() => {
-                    router.push("/login"), setMenuOpen(!menuOpen);
-                  }}
-                  className={`${styles.nav_button} ${styles.nav_link}`}
-                  whileTap={{ scale: 0.9 }}
-                  whileHover={{ scale: 1.2 }}
-                >
-                  <span>LOGIN</span>
-                </motion.div>
               </div>
             </div>
           </div>
         </div>
-        <div className={styles.line} />
       </nav>
     </header>
   );

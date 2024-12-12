@@ -62,3 +62,12 @@ html {
 .App {
   background-color: var(--bg);
 }
+
+.inputError {
+  margin-top: 5px;
+  color: #ff3535;
+  font-size: 11px;
+  // font-family: $DMSans;
+  font-style: normal;
+  font-weight: 400;
+}

@@ -17,7 +17,7 @@ export default function LeftContainer() {
         </div>
       </div>
       <span className={styles.title}>
-        Hi i'm{" "}
+        {`Hi i'm`}{" "}
         <span style={{ color: "var(--text-primary)" }}>Moises Perez</span>{" "}
         Sofware Engineer.
       </span>
