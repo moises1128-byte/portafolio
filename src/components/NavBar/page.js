@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import Logo from "../../assets/images/svg/logo.svg";
 import Translations from "../../assets/images/svg/translation.svg";
 import { ThemeContext } from "../../assets/theme/page";
-import PortafolioStore from "../..//store/portafolio-store";
+import PortafolioStore from "../../store/portafolio-store";
 
 export default function NavBar({ newsContent }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,13 +25,12 @@ export default function NavBar({ newsContent }) {
   const { updateTranslation, Translation } = PortafolioStore();
 
   const content = newsContent[Translation.lenguage];
+
   const { navBar } = content;
 
   return (
     <header className={`App ${theme}`}>
-      <nav
-        className={`${styles.navbar} ${menuOpen ? styles.open : styles.closed}`}
-      >
+      <nav className={styles.navbar}>
         <div className={styles.navbar_container}>
           <input
             type="checkbox"

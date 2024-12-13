@@ -238,10 +238,7 @@
   justify-content: center;
   @include breakPointMedium(md) {
     width: 100%;
-    margin-top: 40px;
-  }
-  @include breakPointSmall(sd) {
-    margin-top: 5px;
+    margin-top: 70px;
   }
 }
 

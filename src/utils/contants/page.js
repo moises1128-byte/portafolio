@@ -178,9 +178,9 @@ export const Translation = {
       },
     },
     navBar: {
-      about: "ABOUT",
-      projects: "PROJECTS",
-      contact: "CONTACT",
+      about: "About",
+      projects: "Projects",
+      contact: "Contact",
     },
   },
   "es-ES": {
@@ -218,9 +218,9 @@ export const Translation = {
       },
     },
     navBar: {
-      about: "SOPBRE MI",
-      projects: "PROJECTOS",
-      contact: "CONTACTO",
+      about: "Sobre Mi",
+      projects: "Projectos",
+      contact: "Contacto",
     },
   },
 };
