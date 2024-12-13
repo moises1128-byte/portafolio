@@ -5,8 +5,8 @@ export default function AboutContainer({ rightContent }) {
   return (
     <div
       id="about"
-      style={{ marginTop: 70, scrollMarginTop: 110 }}
-      className={styles.container}
+      style={{ scrollMarginTop: 110 }}
+      className={`${styles.container} ${styles.aboutMargin}`}
     >
       <span className={styles.label}>{rightContent.title}</span>
 

@@ -409,3 +409,10 @@
     flex-wrap: wrap;
   }
 }
+
+.aboutMargin {
+  margin-top: 70px;
+  @include breakPointMedium(md) {
+    margin-top: 10px;
+  }
+}
