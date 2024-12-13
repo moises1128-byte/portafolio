@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import RightContainer from "./components/RightComponent";
 import LeftContainer from "./components/LeftComponent";
 import { ThemeContext } from "../../assets/theme/page";
+import { Translation } from "../../utils/contants/page";
 
 export default function Portafolio() {
   const { theme } = useContext(ThemeContext);
@@ -15,9 +16,9 @@ export default function Portafolio() {
         <ToastContainer />
 
         <div className={styles.mainContainer}>
-          <LeftContainer />
+          <LeftContainer newsContent={Translation} />
 
-          <RightContainer toast={toast} />
+          <RightContainer toast={toast} newsContent={Translation} />
         </div>
       </div>
     </main>

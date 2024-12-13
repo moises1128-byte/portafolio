@@ -141,3 +141,86 @@ export const Testimonials = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
 ];
+
+export const Translation = {
+  "en-US": {
+    leftContent: {
+      header: "Hi i'm",
+      subHeader: "Moises Perez",
+      footer: "Software Engineer.",
+      description:
+        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      firstButton: "Download my CV",
+      secondButton: "Hire me",
+    },
+    rightContent: {
+      about: {
+        title: "About Me",
+        description:
+          "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      },
+      skills: {
+        title: "My Skills",
+        Subtitle: "Primary Skill on",
+        FooterTitle: "Second Skills on",
+      },
+      proyects: {
+        title: "Projects that i worked on",
+      },
+      contact: {
+        title: "Contact With Me",
+        formikName: "YOUR NAME",
+        formikPhone: "PHONE NUMBER",
+        formikEmail: "EMAIL",
+        formikSubject: "SUBJECT",
+        formikMessage: "YOUR MESSAGE",
+        formikButton: "Send Message",
+      },
+    },
+    navBar: {
+      about: "ABOUT",
+      projects: "PROJECTS",
+      contact: "CONTACT",
+    },
+  },
+  "es-ES": {
+    leftContent: {
+      header: "Hola soy",
+      subHeader: "Moises Perez",
+      footer: "Ingeniero de Software.",
+      description:
+        "No sólo ha sobrevivido cinco siglos, sino que también ha pasado a la composición tipográfica electrónica, permaneciendo esencialmente inalterada. Se popularizó en la década de 1960 con la aparición de hojas Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con software de autoedición como Aldus PageMaker que incluía versiones de Lorem Ipsum.",
+      firstButton: "Descargar mi CV",
+      secondButton: "Contratame",
+    },
+    rightContent: {
+      about: {
+        title: "Sobre Mi",
+        description:
+          "No sólo ha sobrevivido cinco siglos, sino que también ha pasado a la composición tipográfica electrónica, permaneciendo esencialmente inalterada. Se popularizó en la década de 1960 con la aparición de hojas Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con software de autoedición como Aldus PageMaker que incluía versiones de Lorem Ipsum.",
+      },
+      skills: {
+        title: "Habilidades",
+        Subtitle: "Habilidad Primaria",
+        FooterTitle: "Habilidad Secundaria",
+      },
+      proyects: {
+        title: "Proyectos en los que trabajé",
+      },
+      contact: {
+        title: "Contacta Conmigo",
+        formikName: "NOMBRE",
+        formikPhone: "NUMERO DE TELEFONO",
+        formikEmail: "EMAIL",
+        formikSubject: "ASUNTO",
+        formikMessage: "MENSAJE",
+        formikButton: "Enviar Mensaje",
+      },
+    },
+    navBar: {
+      about: "SOPBRE MI",
+      projects: "PROJECTOS",
+      contact: "CONTACTO",
+    },
+  },
+};

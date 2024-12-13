@@ -2,35 +2,28 @@ import React from "react";
 import styles from "../home.module.scss";
 import About from "./About";
 import Skills from "./Skills";
-import Service from "./Service";
 import Portafolio from "./Portafolio";
-import Blog from "./Blog";
-import Testimonial from "./Testimonial";
 import Contact from "./Contact";
-import Slide_Left from "../../../assets/animation/Slide-Left/page";
+import PortafolioStore from "../../../store/portafolio-store";
 
-export default function RightContainer({ toast }) {
+export default function RightContainer({ toast, newsContent }) {
+  const { Translation } = PortafolioStore();
+
+  const content = newsContent[Translation.lenguage];
+  const { rightContent } = content;
   return (
     <div id="rightSection" className={styles.rightSection}>
-      <About />
+      <About rightContent={rightContent.about} />
 
-      <Skills />
+      <Skills rightContent={rightContent.skills} />
 
-      {/* <Slide_Left delay={0.3}>
-        <Service />
-      </Slide_Left> */}
+      <Portafolio rightContent={rightContent.proyects} />
 
-      <Portafolio />
-
-      {/* <Slide_Left delay={0.3}>
-        <Blog />
-      </Slide_Left> */}
-
-      {/* <Slide_Left delay={0.3}>
-        <Testimonial />
-      </Slide_Left> */}
-
-      <Contact toast={toast} />
+      <Contact
+        toast={toast}
+        rightContent={rightContent.contact}
+        lenguaje={Translation.lenguage}
+      />
     </div>
   );
 }

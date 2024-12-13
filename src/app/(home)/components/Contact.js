@@ -4,11 +4,11 @@ import styles from "../home.module.scss";
 import { Field, Formik } from "formik";
 import * as Yup from "yup";
 
-export default function ContactContainer({ toast }) {
+export default function ContactContainer({ toast, rightContent, lenguaje }) {
   const emailRegExp =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  const schema = Yup.object().shape({
+  const schemaEnglish = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     number: Yup.number(),
     email: Yup.string()
@@ -18,13 +18,23 @@ export default function ContactContainer({ toast }) {
     description: Yup.string().required("Description is required"),
   });
 
+  const schema = Yup.object().shape({
+    name: Yup.string().required("Nombre es Requerido"),
+    number: Yup.number(),
+    email: Yup.string()
+      .matches(emailRegExp, "Email Invalido")
+      .required("Email es Reqerido"),
+    subject: Yup.string().required("Asunto es Requerido"),
+    description: Yup.string().required("Mensaje Requerido"),
+  });
+
   return (
     <div
       id="contact"
       style={{ paddingBottom: 40 }}
       className={styles.container}
     >
-      <h2 className={styles.label}>Contact With Me</h2>
+      <h2 className={styles.label}>{rightContent.title}</h2>
       <div className={styles.line} />
       <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
         <Formik
@@ -35,7 +45,7 @@ export default function ContactContainer({ toast }) {
             subject: "",
             description: "",
           }}
-          validationSchema={schema}
+          validationSchema={lenguaje === "en-US" ? schemaEnglish : schema}
           onSubmit={(values, { resetForm }) => {
             resetForm();
             toast.success("Information sent successfully");
@@ -54,7 +64,7 @@ export default function ContactContainer({ toast }) {
                   }}
                 >
                   <span style={{ color: "var(--text-tertiary)" }}>
-                    YOUR NAME
+                    {rightContent.formikName}
                   </span>
 
                   <Field type="text" name="name" className={styles.field} />
@@ -65,7 +75,7 @@ export default function ContactContainer({ toast }) {
                 </div>
                 <div className={styles.col}>
                   <span style={{ color: "var(--text-tertiary)" }}>
-                    PHONE NUMBER
+                    {rightContent.formikPhone}
                   </span>
 
                   <Field type="text" name="number" className={styles.field} />
@@ -77,7 +87,9 @@ export default function ContactContainer({ toast }) {
               </div>
 
               <div className={styles.col}>
-                <span style={{ color: "var(--text-tertiary)" }}>EMAIL</span>
+                <span style={{ color: "var(--text-tertiary)" }}>
+                  {rightContent.formikEmail}
+                </span>
                 <Field type="text" name="email" className={styles.field} />
 
                 {errors.email && touched.email ? (
@@ -86,7 +98,10 @@ export default function ContactContainer({ toast }) {
               </div>
 
               <div className={styles.col}>
-                <span style={{ color: "var(--text-tertiary)" }}>SUBJECT</span>
+                <span style={{ color: "var(--text-tertiary)" }}>
+                  {" "}
+                  {rightContent.formikSubject}
+                </span>
                 <Field type="text" name="subject" className={styles.field} />
 
                 {errors.subject && touched.subject ? (
@@ -96,7 +111,7 @@ export default function ContactContainer({ toast }) {
 
               <div className={styles.col}>
                 <span style={{ color: "var(--text-tertiary)" }}>
-                  YOUR MESSAGE
+                  {rightContent.formikMessage}
                 </span>
 
                 <Field
@@ -115,7 +130,7 @@ export default function ContactContainer({ toast }) {
                 onClick={handleSubmit}
                 className={`${styles.arrow_box} ${styles.submitContainer}`}
               >
-                Send Mesagge
+                {rightContent.formikButton}
               </div>
             </>
           )}

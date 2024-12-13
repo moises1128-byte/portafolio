@@ -3,14 +3,14 @@ import styles from "../home.module.scss";
 import Image from "next/image";
 import { Skills, Second_Skills } from "../../../utils/contants/page";
 
-export default function SkillsContainer() {
+export default function SkillsContainer({ rightContent }) {
   return (
     <div className={styles.container}>
-      <h2 className={styles.label}>My Skills</h2>
+      <h2 className={styles.label}>{rightContent.title}</h2>
 
       <div className={styles.line} />
 
-      <h3 className={styles.sub_label}>Primary Skill on</h3>
+      <h3 className={styles.sub_label}>{rightContent.Subtitle}</h3>
 
       <div className={styles.imageContainerPrimary}>
         {Skills.map((e, index) => (
@@ -29,7 +29,7 @@ export default function SkillsContainer() {
         ))}
       </div>
 
-      <h3 className={styles.sub_label}>Second Skills on</h3>
+      <h3 className={styles.sub_label}>{rightContent.FooterTitle}</h3>
 
       <div className={styles.imageContainerPrimary}>
         {Second_Skills.map((e, index) => (

@@ -1,11 +1,19 @@
+"use client";
+
 import React from "react";
 import styles from "../home.module.scss";
 import Image from "next/image";
 import Profile from "../../../assets/images/png/program-4.png";
 import Github from "../../../assets/images/svg/GitHub.svg";
 import Linkedin from "../../../assets/images/svg/Linkedin.svg";
+import PortafolioStore from "../../../store/portafolio-store";
 
-export default function LeftContainer() {
+export default function LeftContainer({ newsContent }) {
+  const { Translation } = PortafolioStore();
+
+  const content = newsContent[Translation.lenguage]; // Fallback to "en-US" if locale is undefined
+  const { leftContent } = content;
+
   return (
     <section className={styles.leftSection}>
       <div className={styles.imageContainer}>
@@ -15,17 +23,14 @@ export default function LeftContainer() {
         </div>
       </div>
       <span className={styles.title}>
-        {`Hi i'm`}{" "}
-        <span style={{ color: "var(--text-primary)" }}>Moises Perez</span>{" "}
-        Sofware Engineer.
+        {leftContent.header}{" "}
+        <span style={{ color: "var(--text-primary)" }}>
+          {leftContent.subHeader}
+        </span>{" "}
+        {leftContent.footer}
       </span>
-      <p className={styles.sub_title}>
-        It has survived not only five centuries, but also the leap into
-        electronic typesetting, remaining essentially unchanged. It was
-        popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software
-        like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
+
+      <p className={styles.sub_title}>{leftContent.description}</p>
 
       <div className={styles.leftBottomSection}>
         <button
@@ -40,7 +45,7 @@ export default function LeftContainer() {
             style={{ color: "var(--text-primary)" }}
             // className="no-underline text-[var(--text-primary)]"
           >
-            Donwload my CV
+            {leftContent.firstButton}
           </span>
         </button>
         <button
@@ -48,7 +53,7 @@ export default function LeftContainer() {
           style={{ color: "var(--text-primary)" }}
           onClick={() => (window.location.href = "#contact")}
         >
-          Hire me
+          {leftContent.secondButton}
         </button>
       </div>
 
