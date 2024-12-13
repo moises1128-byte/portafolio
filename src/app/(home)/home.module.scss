@@ -16,7 +16,7 @@
   }
 
   @include breakPointSmall(sd) {
-    margin-inline: 20px;
+    margin-inline: 10px;
   }
 }
 
@@ -372,6 +372,7 @@
   flex-wrap: wrap;
   @include breakPointSmall(sd) {
     gap: 5px;
+    justify-content: center;
   }
 }
 
