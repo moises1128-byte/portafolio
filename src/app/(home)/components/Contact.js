@@ -3,6 +3,7 @@ import React from "react";
 import styles from "../home.module.scss";
 import { Field, Formik } from "formik";
 import * as Yup from "yup";
+import { sendEmail } from "@/utils/brevo";
 
 export default function ContactContainer({ toast, rightContent, lenguaje }) {
   const emailRegExp =
@@ -28,6 +29,17 @@ export default function ContactContainer({ toast, rightContent, lenguaje }) {
     description: Yup.string().required("Mensaje Requerido"),
   });
 
+  const handelEmail = async (values, toast, resetForm) => {
+    const success = await sendEmail(values);
+
+    if (success) {
+      toast.success("Email sent successfully");
+      resetForm();
+    } else {
+      toast.error("Error sending email");
+    }
+  };
+
   return (
     <div
       id="contact"
@@ -47,9 +59,8 @@ export default function ContactContainer({ toast, rightContent, lenguaje }) {
           }}
           validationSchema={lenguaje === "en-US" ? schemaEnglish : schema}
           onSubmit={(values, { resetForm }) => {
-            resetForm();
-            toast.success("Information sent successfully");
             console.log(values);
+            handelEmail(values, toast, resetForm);
           }}
         >
           {({ handleSubmit, errors, touched }) => (
