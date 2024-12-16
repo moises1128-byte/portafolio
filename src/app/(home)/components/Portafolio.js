@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../home.module.scss";
-import { Services } from "../../../utils/contants/page";
 
 export default function PortafolioContainer({ rightContent }) {
+  const [selection, setSelection] = useState(null);
+
   return (
     <div
       id="projects"
@@ -11,11 +12,27 @@ export default function PortafolioContainer({ rightContent }) {
     >
       <h2 className={styles.label}>{rightContent.title}</h2>
       <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-        {Services.map((e, index) => (
-          <div key={index} className={styles.skill_text}>
-            <span>• {e.name}</span>
-            <span className={styles.arrow}>→</span>
-          </div>
+        {rightContent.Services.map((e, index) => (
+          <>
+            <div
+              key={index}
+              className={
+                e.id === selection
+                  ? styles.skill_text_Selected
+                  : styles.skill_text
+              }
+              onClick={() =>
+                selection === e.id ? setSelection(null) : setSelection(e.id)
+              }
+            >
+              <span>• {e.name}</span>
+              <span className={styles.arrow}>→</span>
+            </div>
+
+            {selection === e.id && (
+              <p className={styles.description_text}>{e.description}</p>
+            )}
+          </>
         ))}
       </div>
     </div>

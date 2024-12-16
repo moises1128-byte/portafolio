@@ -8,9 +8,9 @@ import PortafolioStore from "../../../store/portafolio-store";
 
 export default function RightContainer({ toast, newsContent }) {
   const { Translation } = PortafolioStore();
-
   const content = newsContent[Translation.lenguage];
   const { rightContent } = content;
+
   return (
     <div id="rightSection" className={styles.rightSection}>
       <About rightContent={rightContent.about} />

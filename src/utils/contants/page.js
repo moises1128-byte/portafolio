@@ -17,21 +17,6 @@ import Redux from "../../assets/images/svg/redux.svg";
 import Vercel from "../../assets/images/svg/vercel.svg";
 import Docker from "../../assets/images/svg/docker.svg";
 
-export const Services = [
-  {
-    id: 1,
-    name: "Landing Page",
-  },
-  {
-    id: 2,
-    name: "Landing Page",
-  },
-  {
-    id: 3,
-    name: "Landing Page",
-  },
-];
-
 export const Skills = [
   {
     id: 1,
@@ -149,15 +134,16 @@ export const Translation = {
       subHeader: "Moises Perez",
       footer: "Software Engineer.",
       description:
-        "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        "Dedicated Frontend Developer with 3+ years of experience an with a passion for crafting intuitive and visually appealing user experiences. Proficient in Tailwind, Javascript, Next.js, React, React Native, Expo Go, BitBucket ,Github, Notion, Figma, Postman, Axios, TypeScript, FireBase, Api integration, HTML, CSS, JavaScript. Committed to staying up-to-date with the latest web technologies and design trends. Aspiring to elevate my skills and contribute to innovative projects as a Senior Developer.",
       firstButton: "Download my CV",
       secondButton: "Hire me",
+      avatarText: "It's a pleasure to meet you !",
     },
     rightContent: {
       about: {
         title: "About Me",
         description:
-          "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          "Dedicated Frontend Developer with a strong foundation in web development. Studied at the Universidad Católica Andrés Bello in Caracas, Venezuela, completing eight semesters of computer science.  Experienced in Front-end development, including backend integration and UI/UX design. Specialized in building e-commerce websites and applications, focusing on creating seamless user experiences and optimized for them. ",
       },
       skills: {
         title: "My Skills",
@@ -166,6 +152,68 @@ export const Translation = {
       },
       proyects: {
         title: "Projects that i worked on",
+        Services: [
+          {
+            id: 1,
+            name: "Gofid (Mobile App)",
+            img: Figma,
+            description: `Gofid is a mobile application available on iOS and Android in European markets. As a frontend developer, I contributed to the development of the application's frontend, specifically focusing on:
+    • User Interface: Designed and implemented the user interface, ensuring a seamless and intuitive user experience.
+    • Store Location Integration: Integrated a map feature to display accurate store locations.
+    • Coupon Integration: Developed the frontend components for displaying and managing user coupons.`,
+          },
+          {
+            id: 2,
+            name: "Rdv Web (E-commerce & Appointment Booking)",
+            img: Notion,
+            description: `Rdv Web is a web application designed to help users book cosmetic services. As a frontend developer, I was responsible for the entire frontend development, including:
+    • User Interface: Designed and implemented a visually appealing and user-friendly interface for the landing page, homepage, login, and registration pages.
+    • Store Location Map: Integrated a map feature to display the locations of various cosmetic stores.
+    • Route Tracking: Developed a feature that allows users to track their route to the selected store using Google Maps.
+    • User Dashboard: Developed a user-friendly dashboard for users to view and manage their bookings.
+    • Store Dashboard: Created a dashboard for store owners to manage employees, bookings, and services.
+    • Calendar Integration: Integrated a calendar to visualize and manage bookings efficiently.
+    • Service and Pricing Display: Implemented a feature to display available services and their corresponding prices.
+     By creating a comprehensive and intuitive user experience for both users and store owners, I contributed to the overall success of the Rdv Web platform.`,
+          },
+          {
+            id: 3,
+            name: "Muse (E-commerce)",
+            img: Vercel,
+            description: `World of Muse is a mobile application that allows users to discover and purchase audio content from artists. As a frontend developer, I contributed to the development of the application's frontend using React Native and Expo Go, specifically focusing on:
+    • User Interface: Designed and implemented a visually appealing and user-friendly interface for the app, including the feed, profile pages, and purchase flow.
+    • Authentication: Integrated Apple and Google sign-in to provide seamless user authentication.
+    • Feed Display: Implemented a dynamic feed to display the latest audio content from artists, utilizing Zustand for state management and API integrations to fetch data.
+    • Audio Playback: Integrated audio playback functionality, allowing users to listen to purchased audio content directly within the app.
+    • Audio Download: Implemented a feature to allow users to download purchased audio content for offline listening.
+    • User Profile: Developed a user profile section where users can view their purchase history and favorite audio content.
+    By leveraging React Native and Expo Go, I was able to efficiently develop a cross-platform mobile application with a robust feature set.`,
+          },
+          {
+            id: 4,
+            name: "My Promo (Mobile App)",
+            img: Docker,
+            description: `My Promo is a mobile application designed to provide users with access to promotional offers from various stores in the Caribbean. As a frontend developer, I was responsible for the entire frontend development, specifically focusing on:
+    • User Interface: Designed and implemented a user-friendly interface that allows users to easily select their region and view available promotions.
+    • Region Selection: Developed a feature to allow users to select their desired region and filter promotions accordingly.
+    • PDF Viewer: Integrated a PDF viewer to display promotional offers in a clear and accessible format.
+    • Favorite List: Implemented a feature for users to save their favorite promotions to a personalized list.
+    • Notification Integration: Integrated a notification system to alert users about new promotions and updates.
+    • Store Functionality: Utilized Zustand for efficient state management to handle store-related data and interactions.
+    By creating a user-centric and feature-rich application, I helped enhance the overall user experience of My Promo.`,
+          },
+          {
+            id: 5,
+            name: "MedikDom (Mobile and Web App)",
+            img: Docker,
+            description: `Medikdom is a comprehensive healthcare application designed to streamline the delivery process between hospitals and other healthcare facilities. As a frontend developer, I contributed to the resolution of bugs and the completion of outstanding integrations, specifically focusing on:
+    • User Interface: Improved the user interface to enhance usability and user experience.
+    • Bug Fixes: Identified and resolved various bugs to ensure the application's stability and reliability.
+    • Delivery Integration: Integrated a robust delivery tracking system to provide real-time updates on the status of deliveries.
+    • Delivery Display: Implemented a clear and concise display of delivery information on the application's website.
+    By addressing these critical aspects, I helped optimize the Medikdom application and improve its overall performance.`,
+          },
+        ],
       },
       contact: {
         title: "Contact With Me",
@@ -189,15 +237,16 @@ export const Translation = {
       subHeader: "Moises Perez",
       footer: "Ingeniero de Software.",
       description:
-        "No sólo ha sobrevivido cinco siglos, sino que también ha pasado a la composición tipográfica electrónica, permaneciendo esencialmente inalterada. Se popularizó en la década de 1960 con la aparición de hojas Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con software de autoedición como Aldus PageMaker que incluía versiones de Lorem Ipsum.",
+        "Desarrollador de frontend dedicado con más de 3 años de experiencia y pasión por crear experiencias de usuario intuitivas y visualmente atractivas. Competente en Tailwind, Javascript, Next.js, React, React Native, Expo Go, BitBucket, Github, Notion, Figma, Postman, Axios, TypeScript, FireBase, integración de API, HTML, CSS, JavaScript. Comprometido a mantenerme actualizado con las últimas tecnologías web y tendencias de diseño. Aspiro a mejorar mis habilidades y contribuir a proyectos innovadores como desarrollador sénior.",
       firstButton: "Descargar mi CV",
       secondButton: "Contratame",
+      avatarText: "¡Es un placer conocerte!",
     },
     rightContent: {
       about: {
         title: "Sobre Mi",
         description:
-          "No sólo ha sobrevivido cinco siglos, sino que también ha pasado a la composición tipográfica electrónica, permaneciendo esencialmente inalterada. Se popularizó en la década de 1960 con la aparición de hojas Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con software de autoedición como Aldus PageMaker que incluía versiones de Lorem Ipsum.",
+          "Desarrollador Frontend dedicado con una sólida base en desarrollo web. Estudió en la Universidad Católica Andrés Bello en Caracas, Venezuela, donde completó ocho semestres de informática. Tiene experiencia en desarrollo front-end, incluida la integración back-end y el diseño UI/UX. Especializado en la creación de sitios web y aplicaciones de comercio electrónico, con foco en la creación de experiencias de usuario fluidas y optimizadas para ellas.",
       },
       skills: {
         title: "Habilidades",
@@ -206,6 +255,65 @@ export const Translation = {
       },
       proyects: {
         title: "Proyectos en los que trabajé",
+        Services: [
+          {
+            id: 1,
+            name: "Gofid (Mobile App)",
+            img: Figma,
+            description: `Gofid es una aplicación móvil disponible en iOS y Android en los mercados europeos. Como desarrollador de frontend, contribuí al desarrollo del frontend de la aplicación, centrándome específicamente en: • Interfaz de usuario: diseñé e implementé la interfaz de usuario, asegurando una experiencia de usuario fluida e intuitiva. • Integración de ubicación de tiendas: integré una función de mapa para mostrar ubicaciones precisas de las tiendas. • Integración de cupones: desarrollé los componentes del frontend para mostrar y administrar los cupones de los usuarios.`,
+          },
+          {
+            id: 2,
+            name: "Rdv Web (E-commerce & Appointment Booking)",
+            img: Notion,
+            description: `Rdv Web es una aplicación web diseñada para ayudar a los usuarios a reservar servicios cosméticos. Como desarrollador de frontend, fui responsable de todo el desarrollo del frontend, incluyendo:
+• Interfaz de usuario: diseñé e implementé una interfaz visualmente atractiva y fácil de usar para la página de destino, la página de inicio, el inicio de sesión y las páginas de registro.
+• Mapa de ubicación de la tienda: integré una función de mapa para mostrar las ubicaciones de varias tiendas de cosméticos.
+• Seguimiento de ruta: desarrollé una función que permite a los usuarios rastrear su ruta a la tienda seleccionada usando Google Maps.
+• Panel de usuario: desarrollé un panel de control fácil de usar para que los usuarios vean y administren sus reservas.
+• Panel de control de la tienda: creé un panel de control para que los propietarios de tiendas administren empleados, reservas y servicios.
+• Integración de calendario: integré un calendario para visualizar y administrar reservas de manera eficiente.
+• Visualización de servicios y precios: implementé una función para mostrar los servicios disponibles y sus precios correspondientes.
+Al crear una experiencia de usuario completa e intuitiva tanto para los usuarios como para los propietarios de tiendas, contribuí al éxito general de la plataforma Rdv Web.`,
+          },
+          {
+            id: 3,
+            name: "Muse (E-commerce)",
+            img: Vercel,
+            description: `World of Muse es una aplicación móvil que permite a los usuarios descubrir y comprar contenido de audio de artistas. Como desarrollador de frontend, contribuí al desarrollo del frontend de la aplicación utilizando React Native y Expo Go, centrándome específicamente en:
+• Interfaz de usuario: diseñé e implementé una interfaz visualmente atractiva y fácil de usar para la aplicación, que incluye el feed, las páginas de perfil y el flujo de compra.
+• Autenticación: inicio de sesión integrado de Apple y Google para proporcionar una autenticación de usuario perfecta.
+• Visualización del feed: implementé un feed dinámico para mostrar el contenido de audio más reciente de los artistas, utilizando Zustand para la gestión del estado e integraciones de API para obtener datos.
+• Reproducción de audio: funcionalidad de reproducción de audio integrada, que permite a los usuarios escuchar contenido de audio comprado directamente dentro de la aplicación.
+• Descarga de audio: implementé una función para permitir a los usuarios descargar contenido de audio comprado para escuchar sin conexión.
+• Perfil de usuario: desarrollé una sección de perfil de usuario donde los usuarios pueden ver su historial de compras y su contenido de audio favorito.
+Al aprovechar React Native y Expo Go, pude desarrollar de manera eficiente una aplicación móvil multiplataforma con un conjunto de funciones sólido.`,
+          },
+          {
+            id: 4,
+            name: "My Promo (Mobile App)",
+            img: Docker,
+            description: `My Promo es una aplicación móvil diseñada para brindar a los usuarios acceso a ofertas promocionales de varias tiendas en el Caribe. Como desarrollador de frontend, fui responsable de todo el desarrollo del frontend, centrándome específicamente en:
+• Interfaz de usuario: diseñé e implementé una interfaz fácil de usar que permite a los usuarios seleccionar fácilmente su región y ver las promociones disponibles.
+• Selección de región: desarrollé una función para permitir a los usuarios seleccionar la región deseada y filtrar las promociones en consecuencia.
+• ​​Visor de PDF: integré un visor de PDF para mostrar ofertas promocionales en un formato claro y accesible.
+• Lista de favoritos: implementé una función para que los usuarios guarden sus promociones favoritas en una lista personalizada.
+• Integración de notificaciones: integré un sistema de notificaciones para alertar a los usuarios sobre nuevas promociones y actualizaciones.
+• Funcionalidad de la tienda: utilicé Zustand para una gestión eficiente del estado para manejar los datos e interacciones relacionados con la tienda.
+Al crear una aplicación centrada en el usuario y rica en funciones, ayudé a mejorar la experiencia general del usuario de My Promo.`,
+          },
+          {
+            id: 5,
+            name: "MedikDom (Mobile and Web App)",
+            img: Docker,
+            description: `Medikdom es una aplicación integral de atención médica diseñada para optimizar el proceso de entrega entre hospitales y otras instalaciones de atención médica. Como desarrollador de frontend, contribuí a la resolución de errores y la finalización de integraciones destacadas, centrándome específicamente en:
+• Interfaz de usuario: mejoré la interfaz de usuario para mejorar la usabilidad y la experiencia del usuario.
+• Corrección de errores: identifiqué y resolví varios errores para garantizar la estabilidad y confiabilidad de la aplicación.
+• Integración de entregas: integré un sistema de seguimiento de entregas sólido para proporcionar actualizaciones en tiempo real sobre el estado de las entregas.
+• Visualización de entregas: implementé una visualización clara y concisa de la información de entrega en el sitio web de la aplicación.
+Al abordar estos aspectos críticos, ayudé a optimizar la aplicación Medikdom y mejorar su rendimiento general.`,
+          },
+        ],
       },
       contact: {
         title: "Contacta Conmigo",

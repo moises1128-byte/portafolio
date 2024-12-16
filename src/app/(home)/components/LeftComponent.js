@@ -3,7 +3,8 @@
 import React from "react";
 import styles from "../home.module.scss";
 import Image from "next/image";
-import Profile from "../../../assets/images/png/program-4.png";
+// import Profile from "../../../assets/images/png/program-4.png";
+import Profile from "../../../assets/images/jpeg/profileImage.jpg";
 import Github from "../../../assets/images/svg/GitHub.svg";
 import Linkedin from "../../../assets/images/svg/Linkedin.svg";
 import PortafolioStore from "../../../store/portafolio-store";
@@ -19,7 +20,7 @@ export default function LeftContainer({ newsContent }) {
       <div className={styles.imageContainer}>
         <Image className={styles.image} src={Profile} alt="User_logo" />
         <div className={styles.overlay}>
-          <span className={styles.text}>Hello World</span>
+          <span className={styles.text}>{leftContent.avatarText}</span>e
         </div>
       </div>
       <span className={styles.title}>
