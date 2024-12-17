@@ -30,7 +30,10 @@ export default function PortafolioContainer({ rightContent }) {
             </div>
 
             {selection === e.id && (
-              <p className={styles.description_text}>{e.description}</p>
+              <p
+                className={styles.description_text}
+                dangerouslySetInnerHTML={{ __html: e.description }}
+              />
             )}
           </>
         ))}
