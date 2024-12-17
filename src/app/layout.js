@@ -2,6 +2,7 @@ import "../styles/globals.scss";
 import { Lato } from "next/font/google";
 import "react-toastify/dist/ReactToastify.css";
 import { ThemeProvider } from "../assets/theme/page";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <ThemeProvider>
-        <body className={lato.className}>{children}</body>
+        <body className={lato.className}>
+          <AntdRegistry>{children}</AntdRegistry>
+        </body>
       </ThemeProvider>
     </html>
   );

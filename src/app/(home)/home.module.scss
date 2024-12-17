@@ -203,8 +203,7 @@
   line-height: 34px;
   letter-spacing: -0.5px;
   text-align: left;
-  color: var(--text-secondary);
-  opacity: 0.5;
+  color: #adadad;
 }
 
 .container {
@@ -460,4 +459,18 @@
   @include breakPointMedium(md) {
     margin-top: 10px;
   }
+}
+
+.imgProyect {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: contain;
+}
+
+.imageContainerProject {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
 }

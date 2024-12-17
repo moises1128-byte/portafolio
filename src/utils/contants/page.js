@@ -156,7 +156,13 @@ export const Translation = {
           {
             id: 1,
             name: "Gofid (Mobile App)",
-            img: Figma,
+            img: [
+              { id: 1, url: "https://iili.io/2jvR3yN.png" },
+              { id: 2, url: "https://iili.io/2jvRKuI.png" },
+              { id: 3, url: "https://iili.io/2jqudjR.png" },
+              { id: 4, url: "https://iili.io/2jqu2Qp.png" },
+              { id: 5, url: "https://iili.io/2jv5cbI.png" },
+            ],
             description: `Gofid is a mobile application available on iOS and Android in European markets. As a frontend developer, I contributed to the development of the application's frontend, specifically focusing on:<br><br>
     • User Interface: Designed and implemented the user interface, ensuring a seamless and intuitive user experience.<br><br>
     • Store Location Integration: Integrated a map feature to display accurate store locations.<br><br>
@@ -165,7 +171,13 @@ export const Translation = {
           {
             id: 2,
             name: "Rdv Web (E-commerce & Appointment Booking)",
-            img: Notion,
+            img: [
+              { id: 1, url: "https://iili.io/2jKXOLF.jpg" },
+              { id: 2, url: "https://iili.io/2jKsPTP.png" },
+              { id: 3, url: "https://iili.io/2jfa61p.png" },
+              { id: 4, url: "https://iili.io/2jfUt99.png" },
+              { id: 5, url: "https://iili.io/2jfXhwN.png" },
+            ],
             description: `Rdv Web is a web application designed to help users book cosmetic services. As a frontend developer, I was responsible for the entire frontend development, including:<br><br>
     • User Interface: Designed and implemented a visually appealing and user-friendly interface for the landing page, homepage, login, and registration pages.<br><br>
     • Store Location Map: Integrated a map feature to display the locations of various cosmetic stores.<br><br>
@@ -179,7 +191,14 @@ export const Translation = {
           {
             id: 3,
             name: "Muse (E-commerce)",
-            img: Vercel,
+            img: [
+              { id: 1, url: "https://iili.io/2jkLh9n.jpg" },
+              { id: 2, url: "https://iili.io/2jkLjus.jpg" },
+              { id: 3, url: "https://iili.io/2jkLMFI.jpg" },
+              { id: 4, url: "https://iili.io/2jkLW8X.jpg" },
+              { id: 5, url: "https://iili.io/2jkLVat.jpg" },
+              { id: 6, url: "https://iili.io/2jkLwwG.jpg" },
+            ],
             description: `World of Muse is a mobile application that allows users to discover and purchase audio content from artists. As a frontend developer, I contributed to the development of the application's frontend using React Native and Expo Go, specifically focusing on:<br><br>
     • User Interface: Designed and implemented a visually appealing and user-friendly interface for the app, including the feed, profile pages, and purchase flow.<br><br>
     • Authentication: Integrated Apple and Google sign-in to provide seamless user authentication.<br><br>
@@ -192,7 +211,13 @@ export const Translation = {
           {
             id: 4,
             name: "My Promo (Mobile App)",
-            img: Docker,
+            img: [
+              { id: 1, url: "https://iili.io/2jv9zMu.png" },
+              { id: 2, url: "https://iili.io/2jv9Fa4.png" },
+              { id: 3, url: "https://iili.io/2jv9K8l.png" },
+              { id: 4, url: "https://iili.io/2jv9Cw7.png" },
+              { id: 5, url: "https://iili.io/2jv9q92.png" },
+            ],
             description: `My Promo is a mobile application designed to provide users with access to promotional offers from various stores in the Caribbean. As a frontend developer, I was responsible for the entire frontend development, specifically focusing on:<br><br>
     • User Interface: Designed and implemented a user-friendly interface that allows users to easily select their region and view available promotions.<br><br>
     • Region Selection: Developed a feature to allow users to select their desired region and filter promotions accordingly.<br><br>
@@ -205,7 +230,13 @@ export const Translation = {
           {
             id: 5,
             name: "MedikDom (Mobile and Web App)",
-            img: Docker,
+            img: [
+              { id: 1, url: "https://iili.io/2jvfuyJ.png" },
+              { id: 2, url: "https://iili.io/2jvf7Qp.png" },
+              { id: 3, url: "https://iili.io/2jvfcGI.png" },
+              { id: 4, url: "https://iili.io/2jvfaCN.png" },
+              { id: 5, url: "https://iili.io/2jvfRTv.png" },
+            ],
             description: `Medikdom is a comprehensive healthcare application designed to streamline the delivery process between hospitals and other healthcare facilities. As a frontend developer, I contributed to the resolution of bugs and the completion of outstanding integrations, specifically focusing on:<br><br>
     • User Interface: Improved the user interface to enhance usability and user experience.<br><br>
     • Bug Fixes: Identified and resolved various bugs to ensure the application's stability and reliability.<br><br>
@@ -259,13 +290,25 @@ export const Translation = {
           {
             id: 1,
             name: "Gofid (Mobile App)",
-            img: Figma,
+            img: [
+              { id: 1, url: "https://iili.io/2jvR3yN.png" },
+              { id: 2, url: "https://iili.io/2jvRKuI.png" },
+              { id: 3, url: "https://iili.io/2jqudjR.png" },
+              { id: 4, url: "https://iili.io/2jqu2Qp.png" },
+              { id: 5, url: "https://iili.io/2jv5cbI.png" },
+            ],
             description: `Gofid es una aplicación móvil disponible en iOS y Android en los mercados europeos. Como desarrollador de frontend, contribuí al desarrollo del frontend de la aplicación, centrándome específicamente en: • Interfaz de usuario: diseñé e implementé la interfaz de usuario, asegurando una experiencia de usuario fluida e intuitiva. • Integración de ubicación de tiendas: integré una función de mapa para mostrar ubicaciones precisas de las tiendas. • Integración de cupones: desarrollé los componentes del frontend para mostrar y administrar los cupones de los usuarios.`,
           },
           {
             id: 2,
             name: "Rdv Web (E-commerce & Appointment Booking)",
-            img: Notion,
+            img: [
+              { id: 1, url: "https://iili.io/2jKXOLF.jpg" },
+              { id: 2, url: "https://iili.io/2jKsPTP.png" },
+              { id: 3, url: "https://iili.io/2jfa61p.png" },
+              { id: 4, url: "https://iili.io/2jfUt99.png" },
+              { id: 5, url: "https://iili.io/2jfXhwN.png" },
+            ],
             description: `Rdv Web es una aplicación web diseñada para ayudar a los usuarios a reservar servicios cosméticos. Como desarrollador de frontend, fui responsable de todo el desarrollo del frontend, incluyendo:<br><br>
 • Interfaz de usuario: diseñé e implementé una interfaz visualmente atractiva y fácil de usar para la página de destino, la página de inicio, el inicio de sesión y las páginas de registro.<br><br>
 • Mapa de ubicación de la tienda: integré una función de mapa para mostrar las ubicaciones de varias tiendas de cosméticos.<br><br>
@@ -279,7 +322,14 @@ Al crear una experiencia de usuario completa e intuitiva tanto para los usuarios
           {
             id: 3,
             name: "Muse (E-commerce)",
-            img: Vercel,
+            img: [
+              { id: 1, url: "https://iili.io/2jkLh9n.jpg" },
+              { id: 2, url: "https://iili.io/2jkLjus.jpg" },
+              { id: 3, url: "https://iili.io/2jkLMFI.jpg" },
+              { id: 4, url: "https://iili.io/2jkLW8X.jpg" },
+              { id: 5, url: "https://iili.io/2jkLVat.jpg" },
+              { id: 6, url: "https://iili.io/2jkLwwG.jpg" },
+            ],
             description: `World of Muse es una aplicación móvil que permite a los usuarios descubrir y comprar contenido de audio de artistas. Como desarrollador de frontend, contribuí al desarrollo del frontend de la aplicación utilizando React Native y Expo Go, centrándome específicamente en:<br><br>
 • Interfaz de usuario: diseñé e implementé una interfaz visualmente atractiva y fácil de usar para la aplicación, que incluye el feed, las páginas de perfil y el flujo de compra.<br><br>
 • Autenticación: inicio de sesión integrado de Apple y Google para proporcionar una autenticación de usuario perfecta.<br><br>
@@ -292,7 +342,13 @@ Al aprovechar React Native y Expo Go, pude desarrollar de manera eficiente una a
           {
             id: 4,
             name: "My Promo (Mobile App)",
-            img: Docker,
+            img: [
+              { id: 1, url: "https://iili.io/2jv9zMu.png" },
+              { id: 2, url: "https://iili.io/2jv9Fa4.png" },
+              { id: 3, url: "https://iili.io/2jv9K8l.png" },
+              { id: 4, url: "https://iili.io/2jv9Cw7.png" },
+              { id: 5, url: "https://iili.io/2jv9q92.png" },
+            ],
             description: `My Promo es una aplicación móvil diseñada para brindar a los usuarios acceso a ofertas promocionales de varias tiendas en el Caribe. Como desarrollador de frontend, fui responsable de todo el desarrollo del frontend, centrándome específicamente en:<br><br>
 • Interfaz de usuario: diseñé e implementé una interfaz fácil de usar que permite a los usuarios seleccionar fácilmente su región y ver las promociones disponibles.<br><br>
 • Selección de región: desarrollé una función para permitir a los usuarios seleccionar la región deseada y filtrar las promociones en consecuencia.<br><br>
@@ -305,7 +361,13 @@ Al crear una aplicación centrada en el usuario y rica en funciones, ayudé a me
           {
             id: 5,
             name: "MedikDom (Mobile and Web App)",
-            img: Docker,
+            img: [
+              { id: 1, url: "https://iili.io/2jvfuyJ.png" },
+              { id: 2, url: "https://iili.io/2jvf7Qp.png" },
+              { id: 3, url: "https://iili.io/2jvfcGI.png" },
+              { id: 4, url: "https://iili.io/2jvfaCN.png" },
+              { id: 5, url: "https://iili.io/2jvfRTv.png" },
+            ],
             description: `Medikdom es una aplicación integral de atención médica diseñada para optimizar el proceso de entrega entre hospitales y otras instalaciones de atención médica. Como desarrollador de frontend, contribuí a la resolución de errores y la finalización de integraciones destacadas, centrándome específicamente en:<br><br>
 • Interfaz de usuario: mejoré la interfaz de usuario para mejorar la usabilidad y la experiencia del usuario.<br><br>
 • Corrección de errores: identifiqué y resolví varios errores para garantizar la estabilidad y confiabilidad de la aplicación.<br><br>
