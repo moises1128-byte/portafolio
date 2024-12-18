@@ -6,7 +6,7 @@ const apiInstance = new brevo.TransactionalEmailsApi();
 
 apiInstance.setApiKey(
   brevo.TransactionalEmailsApiApiKeys.apiKey,
-  process.env.BREVO_API_KEY
+  process.env.NEXT_PUBLIC_BREVO_API_KEY
 );
 
 export async function sendEmail(values) {

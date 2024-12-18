@@ -59,7 +59,6 @@ export default function ContactContainer({ toast, rightContent, lenguaje }) {
           }}
           validationSchema={lenguaje === "en-US" ? schemaEnglish : schema}
           onSubmit={(values, { resetForm }) => {
-            console.log(values);
             handelEmail(values, toast, resetForm);
           }}
         >
