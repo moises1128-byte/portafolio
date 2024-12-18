@@ -3,7 +3,7 @@ import { Lato } from "next/font/google";
 import "react-toastify/dist/ReactToastify.css";
 import { ThemeProvider } from "../assets/theme/page";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
       <ThemeProvider>
         <body className={lato.className}>
           <AntdRegistry>{children}</AntdRegistry>
+          <SpeedInsights />
         </body>
       </ThemeProvider>
     </html>
