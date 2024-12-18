@@ -70,7 +70,7 @@ export default function LeftContainer({ newsContent }) {
             className={styles.icons}
           />
           <Image
-            onClick={() => window.open("www.linkedin.com/in/moises-perez-dev")}
+            onClick={() => window.open("https://linkedin.com/in/moises-perez-dev")}
             src={Linkedin}
             alt="contact_icons"
             className={styles.icons}
