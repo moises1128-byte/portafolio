@@ -15,6 +15,9 @@ export default function LeftContainer({ newsContent }) {
   const content = newsContent[Translation.lenguage]; // Fallback to "en-US" if locale is undefined
   const { leftContent } = content;
 
+  const cv_en = "/Resume.pdf";
+  const cv_es = "/Curriculum.pdf";
+
   return (
     <section className={styles.leftSection}>
       <div className={styles.imageContainer}>
@@ -35,17 +38,14 @@ export default function LeftContainer({ newsContent }) {
 
       <div className={styles.leftBottomSection}>
         <button
-          onClick={() =>
-            window.open(
-              "https://docs.google.com/document/d/1CFXetyFJbwqlpuiqNGH25S9j0JlxvvPM8jlcxbC4xH4/edit?usp=sharing"
-            )
-          }
+          onClick={(e) => {
+            e.preventDefault();
+            const url = Translation.lenguage === "en-US" ? cv_en : cv_es;
+            window.open(url, "_blank", "noopener,noreferrer");
+          }}
           className={styles.icon_box}
         >
-          <span
-            style={{ color: "var(--text-primary)" }}
-            // className="no-underline text-[var(--text-primary)]"
-          >
+          <span style={{ color: "var(--text-primary)" }}>
             {leftContent.firstButton}
           </span>
         </button>
@@ -70,7 +70,9 @@ export default function LeftContainer({ newsContent }) {
             className={styles.icons}
           />
           <Image
-            onClick={() => window.open("https://linkedin.com/in/moises-perez-dev")}
+            onClick={() =>
+              window.open("https://linkedin.com/in/moises-perez-dev")
+            }
             src={Linkedin}
             alt="contact_icons"
             className={styles.icons}
