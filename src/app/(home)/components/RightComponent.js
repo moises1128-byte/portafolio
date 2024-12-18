@@ -15,9 +15,9 @@ export default function RightContainer({ toast, newsContent }) {
     <div id="rightSection" className={styles.rightSection}>
       <About rightContent={rightContent.about} />
 
-      <Skills rightContent={rightContent.skills} />
-
       <Portafolio rightContent={rightContent.proyects} />
+
+      <Skills rightContent={rightContent.skills} />
 
       <Contact
         toast={toast}
