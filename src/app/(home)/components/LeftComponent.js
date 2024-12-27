@@ -3,7 +3,6 @@
 import React from "react";
 import styles from "../home.module.scss";
 import Image from "next/image";
-// import Profile from "../../../assets/images/png/program-4.png";
 import Profile from "../../../assets/images/jpeg/profileImage.jpg";
 import Github from "../../../assets/images/svg/GitHub.svg";
 import Linkedin from "../../../assets/images/svg/Linkedin.svg";

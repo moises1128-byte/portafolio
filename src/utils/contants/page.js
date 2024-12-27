@@ -17,6 +17,12 @@ import Redux from "../../assets/images/svg/redux.svg";
 import Vercel from "../../assets/images/svg/vercel.svg";
 import Docker from "../../assets/images/svg/docker.svg";
 
+const GofidVideo = "gofid-video.mp4";
+const RdvVideo = "rdv-video.mp4";
+const MuseVideo = "muse-video.mp4";
+const MyPromoVideo = "myPromo-video.mp4";
+const medikDom = "medikDom-video.mp4";
+
 export const Skills = [
   {
     id: 1,
@@ -152,16 +158,34 @@ export const Translation = {
       },
       proyects: {
         title: "Projects that i worked on",
+        modalTitle: "Project Overview",
+        modalSubTitle: "Technologies Used",
         Services: [
           {
             id: 1,
             name: "Gofid (Mobile App)",
+            video: GofidVideo,
             img: [
               { id: 1, url: "https://iili.io/2jvR3yN.png" },
               { id: 2, url: "https://iili.io/2jvRKuI.png" },
               { id: 3, url: "https://iili.io/2jqudjR.png" },
               { id: 4, url: "https://iili.io/2jqu2Qp.png" },
               { id: 5, url: "https://iili.io/2jv5cbI.png" },
+            ],
+            Technologies: [
+              { id: 1, title: "Expo Go" },
+              { id: 2, title: "Axios" },
+              { id: 3, title: "React Native" },
+              { id: 4, title: "Redux" },
+              { id: 5, title: "Formik" },
+              { id: 6, title: "Yup" },
+              { id: 7, title: "React Hook Form" },
+              { id: 8, title: "react Dom" },
+              { id: 9, title: "React Native Maps" },
+              { id: 10, title: "React Query" },
+              { id: 11, title: "Jwt Decode" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "And More..." },
             ],
             description: `Gofid is a mobile application available on iOS and Android in European markets. As a frontend developer, I contributed to the development of the application's frontend, specifically focusing on:<br><br>
     • User Interface: Designed and implemented the user interface, ensuring a seamless and intuitive user experience.<br><br>
@@ -171,12 +195,29 @@ export const Translation = {
           {
             id: 2,
             name: "Rdv Web (E-commerce & Appointment Booking)",
+            video: RdvVideo,
             img: [
               { id: 1, url: "https://iili.io/2jKXOLF.jpg" },
               { id: 2, url: "https://iili.io/2jKsPTP.png" },
               { id: 3, url: "https://iili.io/2jfa61p.png" },
               { id: 4, url: "https://iili.io/2jfUt99.png" },
               { id: 5, url: "https://iili.io/2jfXhwN.png" },
+            ],
+            Technologies: [
+              { id: 1, title: "NextJS" },
+              { id: 2, title: "Axios" },
+              { id: 3, title: "React" },
+              { id: 4, title: "Redux" },
+              { id: 5, title: "Formik" },
+              { id: 6, title: "Yup" },
+              { id: 7, title: "Sass" },
+              { id: 8, title: "Next Auth" },
+              { id: 9, title: "Jspdf" },
+              { id: 10, title: "Eslint" },
+              { id: 11, title: "Cookies Next" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "React Query" },
+              { id: 14, title: "And More..." },
             ],
             description: `Rdv Web is a web application designed to help users book cosmetic services. As a frontend developer, I was responsible for the entire frontend development, including:<br><br>
     • User Interface: Designed and implemented a visually appealing and user-friendly interface for the landing page, homepage, login, and registration pages.<br><br>
@@ -190,7 +231,8 @@ export const Translation = {
           },
           {
             id: 3,
-            name: "Muse (E-commerce)",
+            name: "Muse (E-commerce & Mobile App)",
+            video: MuseVideo,
             img: [
               { id: 1, url: "https://iili.io/2jkLh9n.jpg" },
               { id: 2, url: "https://iili.io/2jkLjus.jpg" },
@@ -198,6 +240,22 @@ export const Translation = {
               { id: 4, url: "https://iili.io/2jkLW8X.jpg" },
               { id: 5, url: "https://iili.io/2jkLVat.jpg" },
               { id: 6, url: "https://iili.io/2jkLwwG.jpg" },
+            ],
+            Technologies: [
+              { id: 1, title: "Expo Go" },
+              { id: 2, title: "Zustand" },
+              { id: 3, title: "React Native" },
+              { id: 4, title: "Expo Video" },
+              { id: 5, title: "Formik" },
+              { id: 6, title: "Yup" },
+              { id: 7, title: "Expo Linking" },
+              { id: 8, title: "Expo Auth Session" },
+              { id: 9, title: "Eas" },
+              { id: 10, title: "Eslint" },
+              { id: 11, title: "React Dom" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "Expo Router" },
+              { id: 14, title: "And More..." },
             ],
             description: `World of Muse is a mobile application that allows users to discover and purchase audio content from artists. As a frontend developer, I contributed to the development of the application's frontend using React Native and Expo Go, specifically focusing on:<br><br>
     • User Interface: Designed and implemented a visually appealing and user-friendly interface for the app, including the feed, profile pages, and purchase flow.<br><br>
@@ -211,12 +269,29 @@ export const Translation = {
           {
             id: 4,
             name: "My Promo (Mobile App)",
+            video: MyPromoVideo,
             img: [
               { id: 1, url: "https://iili.io/2jv9zMu.png" },
               { id: 2, url: "https://iili.io/2jv9Fa4.png" },
               { id: 3, url: "https://iili.io/2jv9K8l.png" },
               { id: 4, url: "https://iili.io/2jv9Cw7.png" },
               { id: 5, url: "https://iili.io/2jv9q92.png" },
+            ],
+            Technologies: [
+              { id: 1, title: "Expo Go" },
+              { id: 2, title: "Firebase" },
+              { id: 3, title: "React Native" },
+              { id: 4, title: "Expo Av" },
+              { id: 5, title: "Uuid" },
+              { id: 6, title: "Redux" },
+              { id: 7, title: "Expo Linking" },
+              { id: 8, title: "Expo Notifications" },
+              { id: 9, title: "Rn pdf reader js" },
+              { id: 10, title: "Expo Linear Gradient" },
+              { id: 11, title: "React Dom" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "Expo Location" },
+              { id: 14, title: "And More..." },
             ],
             description: `My Promo is a mobile application designed to provide users with access to promotional offers from various stores in the Caribbean. As a frontend developer, I was responsible for the entire frontend development, specifically focusing on:<br><br>
     • User Interface: Designed and implemented a user-friendly interface that allows users to easily select their region and view available promotions.<br><br>
@@ -230,12 +305,29 @@ export const Translation = {
           {
             id: 5,
             name: "MedikDom (Mobile and Web App)",
+            video: medikDom,
             img: [
               { id: 1, url: "https://iili.io/2jvfuyJ.png" },
               { id: 2, url: "https://iili.io/2jvf7Qp.png" },
               { id: 3, url: "https://iili.io/2jvfcGI.png" },
               { id: 4, url: "https://iili.io/2jvfaCN.png" },
               { id: 5, url: "https://iili.io/2jvfRTv.png" },
+            ],
+            Technologies: [
+              { id: 1, title: "Expo Go" },
+              { id: 2, title: "Firebase" },
+              { id: 3, title: "React Native" },
+              { id: 4, title: "Formik" },
+              { id: 5, title: "Uuid" },
+              { id: 6, title: "Redux" },
+              { id: 7, title: "Yup" },
+              { id: 8, title: "Expo Notifications" },
+              { id: 9, title: "Expo Pixi" },
+              { id: 10, title: "Buffer" },
+              { id: 11, title: "React Dom" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "Axios" },
+              { id: 14, title: "And More..." },
             ],
             description: `Medikdom is a comprehensive healthcare application designed to streamline the delivery process between hospitals and other healthcare facilities. As a frontend developer, I contributed to the resolution of bugs and the completion of outstanding integrations, specifically focusing on:<br><br>
     • User Interface: Improved the user interface to enhance usability and user experience.<br><br>
@@ -286,10 +378,13 @@ export const Translation = {
       },
       proyects: {
         title: "Proyectos en los que trabajé",
+        modalTitle: "Descripción del proyecto",
+        modalSubTitle: "Tecnologías utilizadas",
         Services: [
           {
             id: 1,
             name: "Gofid (Mobile App)",
+            video: GofidVideo,
             img: [
               { id: 1, url: "https://iili.io/2jvR3yN.png" },
               { id: 2, url: "https://iili.io/2jvRKuI.png" },
@@ -297,17 +392,68 @@ export const Translation = {
               { id: 4, url: "https://iili.io/2jqu2Qp.png" },
               { id: 5, url: "https://iili.io/2jv5cbI.png" },
             ],
-            description: `Gofid es una aplicación móvil disponible en iOS y Android en los mercados europeos. Como desarrollador de frontend, contribuí al desarrollo del frontend de la aplicación, centrándome específicamente en: • Interfaz de usuario: diseñé e implementé la interfaz de usuario, asegurando una experiencia de usuario fluida e intuitiva. • Integración de ubicación de tiendas: integré una función de mapa para mostrar ubicaciones precisas de las tiendas. • Integración de cupones: desarrollé los componentes del frontend para mostrar y administrar los cupones de los usuarios.`,
+            Technologies: [
+              { id: 1, title: "Expo Go" },
+              { id: 2, title: "Axios" },
+              { id: 3, title: "React Native" },
+              { id: 4, title: "Redux" },
+              { id: 5, title: "Formik" },
+              { id: 6, title: "Yup" },
+              { id: 7, title: "React Hook Form" },
+              { id: 8, title: "react Dom" },
+              { id: 9, title: "React Native Maps" },
+              { id: 10, title: "React Query" },
+              { id: 11, title: "Jwt Decode" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "And More..." },
+            ],
+            description: `Gofid es una aplicación móvil disponible en iOS y Android en los mercados europeos. Como desarrollador de frontend, contribuí al desarrollo del frontend de la aplicación, centrándome específicamente en:<br><br>
+            • Interfaz de usuario: diseñé e implementé la interfaz de usuario, asegurando una experiencia de usuario fluida e intuitiva.<br><br>
+            • Integración de ubicación de tiendas: integré una función de mapa para mostrar ubicaciones precisas de las tiendas.<br><br>
+            • Integración de cupones: desarrollé los componentes del frontend para mostrar y administrar los cupones de los usuarios.<br><br>`,
           },
           {
             id: 2,
             name: "Rdv Web (E-commerce & Appointment Booking)",
+            video: RdvVideo,
+            Technologies: [
+              { id: 1, title: "NextJS" },
+              { id: 2, title: "Axios" },
+              { id: 3, title: "React" },
+              { id: 4, title: "Redux" },
+              { id: 5, title: "Formik" },
+              { id: 6, title: "Yup" },
+              { id: 7, title: "Sass" },
+              { id: 8, title: "Next Auth" },
+              { id: 9, title: "Jspdf" },
+              { id: 10, title: "Eslint" },
+              { id: 11, title: "Cookies Next" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "React Query" },
+              { id: 14, title: "And More..." },
+            ],
             img: [
               { id: 1, url: "https://iili.io/2jKXOLF.jpg" },
               { id: 2, url: "https://iili.io/2jKsPTP.png" },
               { id: 3, url: "https://iili.io/2jfa61p.png" },
               { id: 4, url: "https://iili.io/2jfUt99.png" },
               { id: 5, url: "https://iili.io/2jfXhwN.png" },
+            ],
+            Technologies: [
+              { id: 1, title: "NextJS" },
+              { id: 2, title: "Axios" },
+              { id: 3, title: "React" },
+              { id: 4, title: "Redux" },
+              { id: 5, title: "Formik" },
+              { id: 6, title: "Yup" },
+              { id: 7, title: "Sass" },
+              { id: 8, title: "Next Auth" },
+              { id: 9, title: "Jspdf" },
+              { id: 10, title: "Eslint" },
+              { id: 11, title: "Cookies Next" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "React Query" },
+              { id: 14, title: "And More..." },
             ],
             description: `Rdv Web es una aplicación web diseñada para ayudar a los usuarios a reservar servicios cosméticos. Como desarrollador de frontend, fui responsable de todo el desarrollo del frontend, incluyendo:<br><br>
 • Interfaz de usuario: diseñé e implementé una interfaz visualmente atractiva y fácil de usar para la página de destino, la página de inicio, el inicio de sesión y las páginas de registro.<br><br>
@@ -321,7 +467,8 @@ Al crear una experiencia de usuario completa e intuitiva tanto para los usuarios
           },
           {
             id: 3,
-            name: "Muse (E-commerce)",
+            name: "Muse (E-commerce & Mobile App)",
+            video: MuseVideo,
             img: [
               { id: 1, url: "https://iili.io/2jkLh9n.jpg" },
               { id: 2, url: "https://iili.io/2jkLjus.jpg" },
@@ -329,6 +476,22 @@ Al crear una experiencia de usuario completa e intuitiva tanto para los usuarios
               { id: 4, url: "https://iili.io/2jkLW8X.jpg" },
               { id: 5, url: "https://iili.io/2jkLVat.jpg" },
               { id: 6, url: "https://iili.io/2jkLwwG.jpg" },
+            ],
+            Technologies: [
+              { id: 1, title: "Expo Go" },
+              { id: 2, title: "Zustand" },
+              { id: 3, title: "React Native" },
+              { id: 4, title: "Expo Video" },
+              { id: 5, title: "Formik" },
+              { id: 6, title: "Yup" },
+              { id: 7, title: "Expo Linking" },
+              { id: 8, title: "Expo Auth Session" },
+              { id: 9, title: "Eas" },
+              { id: 10, title: "Eslint" },
+              { id: 11, title: "React Dom" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "Expo Router" },
+              { id: 14, title: "And More..." },
             ],
             description: `World of Muse es una aplicación móvil que permite a los usuarios descubrir y comprar contenido de audio de artistas. Como desarrollador de frontend, contribuí al desarrollo del frontend de la aplicación utilizando React Native y Expo Go, centrándome específicamente en:<br><br>
 • Interfaz de usuario: diseñé e implementé una interfaz visualmente atractiva y fácil de usar para la aplicación, que incluye el feed, las páginas de perfil y el flujo de compra.<br><br>
@@ -342,12 +505,29 @@ Al aprovechar React Native y Expo Go, pude desarrollar de manera eficiente una a
           {
             id: 4,
             name: "My Promo (Mobile App)",
+            video: MyPromoVideo,
             img: [
               { id: 1, url: "https://iili.io/2jv9zMu.png" },
               { id: 2, url: "https://iili.io/2jv9Fa4.png" },
               { id: 3, url: "https://iili.io/2jv9K8l.png" },
               { id: 4, url: "https://iili.io/2jv9Cw7.png" },
               { id: 5, url: "https://iili.io/2jv9q92.png" },
+            ],
+            Technologies: [
+              { id: 1, title: "Expo Go" },
+              { id: 2, title: "Firebase" },
+              { id: 3, title: "React Native" },
+              { id: 4, title: "Expo Av" },
+              { id: 5, title: "Uuid" },
+              { id: 6, title: "Redux" },
+              { id: 7, title: "Expo Linking" },
+              { id: 8, title: "Expo Notifications" },
+              { id: 9, title: "Rn pdf reader js" },
+              { id: 10, title: "Expo Linear Gradient" },
+              { id: 11, title: "React Dom" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "Expo Location" },
+              { id: 14, title: "And More..." },
             ],
             description: `My Promo es una aplicación móvil diseñada para brindar a los usuarios acceso a ofertas promocionales de varias tiendas en el Caribe. Como desarrollador de frontend, fui responsable de todo el desarrollo del frontend, centrándome específicamente en:<br><br>
 • Interfaz de usuario: diseñé e implementé una interfaz fácil de usar que permite a los usuarios seleccionar fácilmente su región y ver las promociones disponibles.<br><br>
@@ -361,12 +541,29 @@ Al crear una aplicación centrada en el usuario y rica en funciones, ayudé a me
           {
             id: 5,
             name: "MedikDom (Mobile and Web App)",
+            video: medikDom,
             img: [
               { id: 1, url: "https://iili.io/2jvfuyJ.png" },
               { id: 2, url: "https://iili.io/2jvf7Qp.png" },
               { id: 3, url: "https://iili.io/2jvfcGI.png" },
               { id: 4, url: "https://iili.io/2jvfaCN.png" },
               { id: 5, url: "https://iili.io/2jvfRTv.png" },
+            ],
+            Technologies: [
+              { id: 1, title: "Expo Go" },
+              { id: 2, title: "Firebase" },
+              { id: 3, title: "React Native" },
+              { id: 4, title: "Formik" },
+              { id: 5, title: "Uuid" },
+              { id: 6, title: "Redux" },
+              { id: 7, title: "Yup" },
+              { id: 8, title: "Expo Notifications" },
+              { id: 9, title: "Expo Pixi" },
+              { id: 10, title: "Buffer" },
+              { id: 11, title: "React Dom" },
+              { id: 12, title: "JavaScript" },
+              { id: 13, title: "Axios" },
+              { id: 14, title: "And More..." },
             ],
             description: `Medikdom es una aplicación integral de atención médica diseñada para optimizar el proceso de entrega entre hospitales y otras instalaciones de atención médica. Como desarrollador de frontend, contribuí a la resolución de errores y la finalización de integraciones destacadas, centrándome específicamente en:<br><br>
 • Interfaz de usuario: mejoré la interfaz de usuario para mejorar la usabilidad y la experiencia del usuario.<br><br>

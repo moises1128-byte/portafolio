@@ -1,0 +1,7 @@
+services:
+  portfolio_app:  # Replace with your desired service name
+    build: .  # Build the image using the Dockerfile in the current directory
+    ports:
+      - "3000:3000"  # Map host port 3000 to container port 3000
+    volumes:
+      - ./:/app 

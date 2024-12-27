@@ -1,11 +1,16 @@
 module.exports = {
-  webpack: (config, options) =>
-  {
-      config.module.rules.push({
-          test: /\.pdf$/i,
-          type: 'asset/source'
-      })
+  webpack: (config) => {
+    config.module.rules.push(
+      {
+        test: /\.pdf$/,
+        type: 'asset/resource', 
+      },
+      {
+        test: /\.(mp4|webm|ogg|mov)$/, 
+        use: 'file-loader',
+      }
+    );
 
-      return config
+    return config;
   },
-}
+};
