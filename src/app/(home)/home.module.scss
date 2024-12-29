@@ -507,12 +507,6 @@
   }
 }
 
-.imgProyect_modal {
-  width: 150px !important;
-  height: 200px !important;
-  object-fit: contain;
-}
-
 .imageContainerProject_modal {
   display: flex;
   flex-direction: row;
@@ -572,4 +566,16 @@
     opacity: 0.6;
     cursor: pointer;
   }
+}
+
+.imgProyect_modal {
+  width: 150px !important;
+  height: 200px !important;
+  object-fit: contain;
+}
+
+.carouselContainer {
+  background-color: rgba(173, 173, 173, 0.2);
+  border-radius: 10px;
+  margin-top: 20px;
 }

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import styles from "../home.module.scss";
-import { Image, Modal, Spin, Skeleton } from "antd";
+import { Image, Modal, Skeleton, Carousel } from "antd";
 
 export default function PortafolioContainer({ rightContent }) {
   const [selection, setSelection] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalText, setModalText] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [carouselImage, setCarouselImage] = useState(null);
 
   const showModal = (item) => {
     setModalText(item);
@@ -51,7 +52,11 @@ export default function PortafolioContainer({ rightContent }) {
                   size="large"
                   shape="round"
                   block={true}
-                  style={{ height: 250 }}
+                  style={{
+                    height: 250,
+                    backgroundColor: "rgba(173, 173, 173, 0.2)",
+                    borderRadius: 10,
+                  }}
                 />
               </div>
             )}
@@ -72,19 +77,30 @@ export default function PortafolioContainer({ rightContent }) {
               Your browser does not support the video tag.
             </video>
 
-            {modalText?.img.length !== 0 && (
-              <div className={styles.imageContainerProject_modal}>
-                {modalText?.img.map((item, index) => (
-                  <div key={index}>
-                    <Image
-                      className={styles.imgProyect_modal}
-                      alt="proyect_images"
-                      src={item.url}
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
+            <div className={styles.carouselContainer}>
+              <Carousel autoplay arrows speed={1000}>
+                {modalText?.img.map((item, index) => {
+                  return (
+                    <>
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Image
+                          key={index}
+                          src={item.url}
+                          alt="proyect_images"
+                          preview={{ getContainer: "#root" }}
+                          className={styles.imgProyect_modal}
+                        />
+                      </div>
+                    </>
+                  );
+                })}
+              </Carousel>
+            </div>
           </div>
 
           <div className={styles.rightSide_modal}>
