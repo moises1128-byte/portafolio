@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../home.module.scss";
 import { Image, Modal, Skeleton, Carousel } from "antd";
+import { CloseCircleOutlined } from "@ant-design/icons";
 
 export default function PortafolioContainer({ rightContent }) {
   const [selection, setSelection] = useState(null);
@@ -42,6 +43,9 @@ export default function PortafolioContainer({ rightContent }) {
         }}
         width={"80%"}
         style={{ color: "#202123 !important" }}
+        closeIcon={
+          <CloseCircleOutlined style={{ color: "#727273", fontSize: 20 }} />
+        }
       >
         <div className={styles.container_modal}>
           <div className={styles.leftSide_modal}>
@@ -78,7 +82,7 @@ export default function PortafolioContainer({ rightContent }) {
             </video>
 
             <div className={styles.carouselContainer}>
-              <Carousel autoplay arrows speed={1000}>
+              <Carousel autoplay arrows speed={2000}>
                 {modalText?.img.map((item, index) => {
                   return (
                     <>
